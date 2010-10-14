@@ -34,7 +34,7 @@
 
 	<!--  everything else is redirected to ecf.rmap at dev.eclipse.org -->
 	<redirect 
-		href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.ecf/releng/org.eclipse.ecf.releng.bm/ecf.rmap?root=RT_Project&amp;view=co"
+		href="http://git.eclipse.org/c/ecf/org.eclipse.ecf.git/plain/releng/org.eclipse.ecf.releng.bm/ecf.rmap"
 		pattern=".*" />
 	
 </rmap>
