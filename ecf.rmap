@@ -58,7 +58,7 @@
 	<locator searchPathRef="org.eclipse.ecf.osu" pattern="^org\.apache\.mime4j?" failOnError="false"/>
 	
 	<locator searchPathRef="github.jms" pattern="^org\.eclipse\.ecf\.provider\.jms(\..+)?" failOnError="false"/>
-	<locator searchPathRef="github.jms" pattern="^org\.eclipse\.ecf\.tests\.provider\.jms(\..+)?" failOnError="false"/>
+	<locator searchPathRef="github.jms" pattern="^org\.eclipse\.ecf\.tests\.provider\.jms?" failOnError="false"/>
 
 	<!--  everything else is redirected to ecf.rmap at dev.eclipse.org -->
 	<redirect 
