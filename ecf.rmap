@@ -24,27 +24,6 @@
 			</uri>
 		</provider>
 	</searchPath>
-	
-	<!-- JMS at Github -->
-	<searchPath name="github.jms">
-		<provider readerType="git" componentTypes="osgi.bundle" mutable="false" source="true">
-			<uri format="{0},bundles/{1}">
-				<bc:propertyRef key="workspace.root"/>
-				<bc:propertyRef key="buckminster.component" />
-			</uri>
-      			<property key="git.remote.uri" value="https://github.com/ECF/JMS.git"/>
-			<uri format="{0},tests/{1}">
-				<bc:propertyRef key="workspace.root"/>
-				<bc:propertyRef key="buckminster.component" />
-			</uri>
-      			<property key="git.remote.uri" value="https://github.com/ECF/JMS.git"/>
-			<uri format="{0},features/{1}">
-				<bc:propertyRef key="workspace.root"/>
-				<bc:propertyRef key="buckminster.component" />
-			</uri>
-      			<property key="git.remote.uri" value="https://github.com/ECF/JMS.git"/>
-		</provider>
-	</searchPath>
 
 	<!-- below order does matter!!! -->
 
@@ -52,9 +31,6 @@
 	<locator searchPathRef="com.skype" pattern="^com\.skype(\..+)?" failOnError="false"/>
 	<locator searchPathRef="org.eclipse.ecf.osu" pattern="^org\.eclipse\.ecf(\..+)?" failOnError="false"/>
 	<locator searchPathRef="org.eclipse.ecf.osu" pattern="^org\.apache\.mime4j?" failOnError="false"/>
-	
-	<locator searchPathRef="github.jms" pattern="^org\.eclipse\.ecf\.provider\.jms(\..+)?" failOnError="false"/>
-	<locator searchPathRef="github.jms" pattern="^org\.eclipse\.ecf\.tests\.provider\.jms?" failOnError="false"/>
 
 	<!--  everything else is redirected to ecf.rmap at dev.eclipse.org -->
 	<redirect 
